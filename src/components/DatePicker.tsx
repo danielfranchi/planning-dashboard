@@ -1,6 +1,8 @@
-import { DateField, DateValidationError } from "@mui/x-date-pickers";
-import dayjs, { Dayjs } from "dayjs";
 import { Dispatch, SetStateAction, useMemo, useState } from "react";
+
+import dayjs, { Dayjs } from "dayjs";
+
+import { DateField, DateValidationError } from "@mui/x-date-pickers";
 
 interface DatePickerProps {
   selectedDate: Dayjs | null;
@@ -13,7 +15,7 @@ const DatePicker = ({
   setSelectedDate,
   formSubmitted,
 }: DatePickerProps) => {
-  const minDate = dayjs("2000-01-01"); // Início do ano 2000
+  const minDate = dayjs("2000-01-01");
 
   const [error, setError] = useState<DateValidationError | null>(null);
   const [touched, setTouched] = useState<boolean>(false);
@@ -22,12 +24,12 @@ const DatePicker = ({
     if (!touched && !formSubmitted) return "";
 
     if (!selectedDate) {
-      return "Por favor, selecione uma data.";
+      return "Please select a date.";
     }
 
     switch (error) {
       case "invalidDate": {
-        return "Data inválida";
+        return "Invalid date";
       }
       default: {
         return "";
@@ -42,7 +44,7 @@ const DatePicker = ({
       setError(null);
       setSelectedDate(newDate ? dayjs(newDate) : null);
     }
-    setTouched(true); // Define que o campo foi tocado ao interagir com ele
+    setTouched(true);
   };
 
   return (

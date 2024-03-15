@@ -3,19 +3,14 @@ import { useNavigate } from "react-router-dom";
 interface ButtonText {
   text: string;
   type?: "submit" | "reset" | "button";
-
   classButton?: string;
-  disabled?: boolean;
 }
 
-const Button = ({ text, type, classButton, disabled }: ButtonText) => {
+const Button = ({ text, type, classButton }: ButtonText) => {
   const navigate = useNavigate();
 
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     const eventButton = event.target as HTMLButtonElement;
-
-    console.log(eventButton.innerText);
-
     eventButton.innerText === "Add vacation plan" && navigate("/form");
   };
 
@@ -28,7 +23,6 @@ const Button = ({ text, type, classButton, disabled }: ButtonText) => {
       }
       onClick={handleClick}
       type={type}
-      disabled={disabled}
     >
       {text}
     </button>
