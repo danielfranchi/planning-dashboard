@@ -45,7 +45,6 @@ const Form = () => {
   }, [formDataFromLocation, setValue]);
 
   const onSubmit = (data: FormData) => {
-    console.log("data", data)
     setFormSubmitted(true);
 
     if (!selectedDate) {
@@ -56,8 +55,6 @@ const Form = () => {
       ? selectedDate.format("YYYY-MM-DD")
       : null;
     const formDataWithDate = { ...data, date: formattedDate };
-
-    console.log("data", formDataWithDate)
 
     if (location.state && location.state.data) {
       const id = formDataFromLocation.id;

@@ -38,7 +38,6 @@ const DatePicker = ({
   }, [error, touched, formSubmitted, selectedDate]);
 
   const handleChange = (newDate: Dayjs | null) => {
-    console.log("newDate.year()", newDate?.year());
     const year = newDate ? newDate.year().toString() : undefined;
 
     if (
