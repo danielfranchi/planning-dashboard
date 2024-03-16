@@ -2,6 +2,13 @@
 
 ### :rocket: Front-end interface to manage vacation plans
 
+[![Website](https://img.shields.io/badge/Website-Link-blue)](https://65f55ceecac9138c0552f729--tourmaline-salmiakki-c0d708.netlify.app/)
+
+```bash
+# Access the website at this link:
+$ https://65f55ceecac9138c0552f729--tourmaline-salmiakki-c0d708.netlify.app/
+```
+
 <br />
 
 # Project documentation
