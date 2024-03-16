@@ -1,15 +1,19 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { LocalizationProvider } from "@mui/x-date-pickers";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { useEffect } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import { api } from "./service/api";
+import Table from "./components/Table";
+import Header from "./components/Header";
+
 import { get } from "./store/storeData/action";
 import { StoreData } from "./store/storeData/types";
-import Header from "./components/Header";
+
+import { api } from "./service/api";
+
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+
 import AppRoutes from "./routes/routes";
-import Table from "./components/Table";
 
 const App = () => {
   const dispatch = useDispatch();

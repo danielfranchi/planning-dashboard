@@ -38,8 +38,19 @@ const DatePicker = ({
   }, [error, touched, formSubmitted, selectedDate]);
 
   const handleChange = (newDate: Dayjs | null) => {
-    if (!newDate || newDate.isBefore(minDate)) {
+    console.log("newDate.year()", newDate?.year());
+    const year = newDate ? newDate.year().toString() : undefined;
+
+    if (
+      !newDate ||
+      newDate.isBefore(minDate) ||
+      newDate.year() !== 2024 ||
+      !year ||
+      year.length !== 4 ||
+      year !== "2024"
+    ) {
       setError("invalidDate");
+      setSelectedDate(null);
     } else {
       setError(null);
       setSelectedDate(newDate ? dayjs(newDate) : null);

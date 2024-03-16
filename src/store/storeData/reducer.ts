@@ -2,75 +2,26 @@
 import { Data, ArrayData, TypesData } from "./types";
 
 const initialState: ArrayData = {
-    arrayData: [],
+  arrayData: [],
 };
 
 function storeData(state = initialState, action: any) {
-    switch (action.type) {
-      case TypesData.GET_DATA: {
-        
-        return {
-          arrayData: action.payload,
-        };
-      }
-  
-      case TypesData.ADD_DATA: {
-        const newArray = [...state.arrayData, action.payload];
-  
-        return {
-          arrayData: newArray,
-        };
-      }
-  
-      case TypesData.DELETE_DATA: {
-        const id = action.payload;
-  
-        const newArrayDelete = [...state.arrayData].filter((item: Data) => {
-          return item.id !== id;
-        });
-  
-        return {
-          arrayData: newArrayDelete,
-        };
-      }
-  
-      case TypesData.EDIT_DATA: {
-        console.log("action.payload", action.payload)
-        const arrayToEdit = [...state.arrayData].filter((n) => {
-          return n.id !== action.payload.id;
-        });
-  
-        const newToEdit = [...arrayToEdit, action.payload];
-  
-        return {
-          arrayData: newToEdit,
-        };
-      }
-  
-      default: {
-        return state;
-      }
-    }
-  }
-  
-  export default storeData;
-  
-
-/* function storeData(state = initialState, action: any) {
   switch (action.type) {
-    case TypesData.GET_DATA:
+    case TypesData.GET_DATA: {
       return {
         arrayData: action.payload,
       };
+    }
 
-    case TypesData.ADD_DATA:
+    case TypesData.ADD_DATA: {
       const newArray = [...state.arrayData, action.payload];
 
       return {
         arrayData: newArray,
       };
+    }
 
-    case TypesData.DELETE_DATA:
+    case TypesData.DELETE_DATA: {
       const id = action.payload;
 
       const newArrayDelete = [...state.arrayData].filter((item: Data) => {
@@ -80,8 +31,9 @@ function storeData(state = initialState, action: any) {
       return {
         arrayData: newArrayDelete,
       };
+    }
 
-    case TypesData.EDIT_DATA:
+    case TypesData.EDIT_DATA: {
       const arrayToEdit = [...state.arrayData].filter((n) => {
         return n.id !== action.payload.id;
       });
@@ -91,10 +43,12 @@ function storeData(state = initialState, action: any) {
       return {
         arrayData: newToEdit,
       };
+    }
 
-    default:
+    default: {
       return state;
+    }
   }
 }
 
-export default storeData; */
+export default storeData;
