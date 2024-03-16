@@ -1,6 +1,6 @@
-# Planning Dashboard 2024
+# Planning Dashboard
 
-### :rocket: Front-end interface to manage vacation plans for 2024
+### :rocket: Front-end interface to manage vacation plans
 
 <br />
 
