@@ -4,6 +4,16 @@
 
 <br />
 
+# Project documentation
+
+[![Documentation](https://img.shields.io/badge/Documentation-Link-blue)](https://github.com/danielfranchi/planning-board-documentation)
+
+```bash
+# Access the documentation at this link:
+$ https://github.com/danielfranchi/planning-board-documentation
+```
+<br />
+
 ## :wrench: Prerequisites
 
 Before you begin, you will need to have the following tools installed on your machine:
