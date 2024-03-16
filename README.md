@@ -1,30 +1,69 @@
-# React + TypeScript + Vite
+# Planning Dashboard 2024
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### :rocket: Front-end interface to manage vacation plans for 2024
 
-Currently, two official plugins are available:
+<br />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## :wrench: Prerequisites
 
-## Expanding the ESLint configuration
+Before you begin, you will need to have the following tools installed on your machine:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [![Git](https://img.shields.io/badge/Git-Link-blue)](https://git-scm.com/) - Clone the project
+- [![Node.js](https://img.shields.io/badge/Node.js-Link-blue)](https://nodejs.org/en/) - Install the dependencies
+- [![VSCode](https://img.shields.io/badge/VSCode-Link-blue)](https://code.visualstudio.com/) - View the code
 
-- Configure the top-level `parserOptions` property like this:
+For better visibility of the global state in Redux, install the Redux DevTools extension in the browser, and via terminal in the project
+- [![Redux DevTools](https://img.shields.io/badge/Redux_DevTools-Command-blue)](https://www.npmjs.com/package/redux-devtools-extension) - Redux DevTools
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
 ```
+# Access the terminal
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# install the dependency
+$ yarn add redux-devtools-extension
+```
+<br />
+
+## 🛠 Technologies
+
+The following tools were used in the project:
+
+[![React](https://img.shields.io/badge/React-Link-blue)](https://pt-br.reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Link-blue)](https://www.typescriptlang.org/)
+[![Redux](https://img.shields.io/badge/Redux-Link-blue)](https://react-redux.js.org/)
+
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-Link-blue)](https://tailwindcss.com/)
+[![Material UI](https://img.shields.io/badge/Material_UI-Link-blue)](https://mui.com/)
+
+[![Vite](https://img.shields.io/badge/Vite-Link-blue)](https://vitejs.dev/)
+[![React PDF](https://img.shields.io/badge/React_PDF-Link-blue)](https://react-pdf.org/)
+
+<br />
+
+### :white_check_mark: Running the Front-End
+
+```bash
+# Clone the repository
+$ https://github.com/danielfranchi/planning-dashboard
+
+# Access the project folder in the terminal with the cd command
+$ cd planning-dashboard
+
+# Install dependencies
+$ yarn
+
+# Run the application
+$ yarn dev --port 3000
+
+# The server will start on port: 3000
+$ http://localhost:3000
+```
+<br />
+
+### :white_check_mark: Back-end
+
+[![API](https://img.shields.io/badge/API-Link-blue)](https://planning-dashboard-a0bf29b4457a.herokuapp.com/)
+
+```bash
+# Access the backend by going to:
+$ https://planning-dashboard-a0bf29b4457a.herokuapp.com/
+```
