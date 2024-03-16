@@ -12,10 +12,10 @@ const Header = () => {
   return (
     <header className="bg-[#435d7d] text-white flex items-center justify-between p-4 sm:p-6 md:p-8">
       <h1
-        className="text-lg sm:text-xl md:text-2xl cursor-pointer"
+        className="text-2xl sm:text-3xl md:text-4xl cursor-pointer"
         onClick={redirect}
       >
-        Vacation Plan
+        Vacation Plan 2024
       </h1>
       <Button text="Add vacation plan" />
     </header>

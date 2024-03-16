@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export const api = axios.create({
-  baseURL: 'http://localhost:3333/',
+  baseURL: 'https://planning-dashboard-a0bf29b4457a.herokuapp.com/',
 });
